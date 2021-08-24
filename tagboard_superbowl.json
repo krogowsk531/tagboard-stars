@@ -1,0 +1,22 @@
+{
+	"id": "abc_123",
+	"title": "superbowl_54_commercial_cost_avg",
+	"question": "What was the cost of a 30 second commercial spot for superbowl 54",
+	"results": [{
+			"option_title": "5.3 Million",
+			"from_to": ["9", "13"]
+		},
+		{
+			"option_title": "5.4 Million",
+			"from_to": ["21", "39"]
+		},
+		{
+			"option_title": "5.6 Million",
+			"from_to": ["14", "25"]
+		},
+		{
+			"option_title": "5.8 Million",
+			"from_to": ["12", "23"]
+		}
+	]
+}

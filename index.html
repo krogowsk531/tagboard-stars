@@ -1,0 +1,264 @@
+<html>
+  <style>
+    article {
+      padding-bottom: 110px;
+      position: relative;
+    }
+    
+    #main {
+      color: white;
+      background: black;
+      font-size: 55px;
+      width: 1200px;
+      height: 800px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+    
+    header {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+    .star-icon {
+      width: 50px;
+      height: 50px;
+      background: black;
+    }
+    
+    .star-icon-left {
+      float: left;
+      margin-left: 50px;
+      display: flex;
+      flex: 0 0 100px;
+    }
+    
+    .star-icon-right {
+      float: right;
+      margin-right: 50px;
+      display: flex;
+      justify-content: flex-end;
+      flex: 0 0 100px;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+    
+    .poll-results {
+      margin: 15px;
+    }
+    
+    .result-one {
+      height: 100px;
+    }
+    
+    .result-two {
+      height: 100px;
+    }
+    
+    .yellow-box {
+      right: 20px;
+      top: 60px;
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      margin-right: 40px;
+      position: absolute;
+      transform: rotate(5deg);
+      color: black;
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .icons {
+      display: flex;
+    }
+    
+    .header-text {
+      margin: 15px;
+      background-color: red;
+    }
+    
+    .quiz-text {
+      display: flex;
+      flex: 1 1 auto;
+    }
+    
+    .red-circle {
+      height: 50px;
+      width: 50px;
+      background-color: #59d051c;
+      border-radius: 50%;
+    }
+    
+    .five-star-icon {
+      height: 50px;
+      width: 251px;
+    }
+  
+  
+  </style>
+  <body>
+    <div id='main'>
+    <header class='header-text'>
+      <div class='row'>
+        <div class='column'>
+          <div class='star-icon-left'>
+            <img src='images/white-star.png' class='star-icon' alt='white-star' />
+          </div>
+        </div>
+        <div class='column'>
+          <div class='quiz-text'>
+          </div>
+        </div>
+        <div class='column'>
+          <div class='star-icon-right'>
+            <img src='images/white-star.png' class='star-icon' alt='white-star' />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class='poll-results'>
+      <div class='row'>
+        <div class='column'>    
+          <article class='result-one'>
+            <div class='result-one-amount'>
+            </div>
+              <div class='icons'>
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              </div>
+              <div class='five-stars-icon'>
+                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+              </div>
+              <!-- <div class='red-circle'></div> -->
+            <div class='yellow-box'>
+              <div class='result-one-percentage'>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class='column'>  
+          <article class='result-two'>
+            <div class='result-two-amount'>
+            </div>
+              <div class='icons'>
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              </div>
+              <div class='five-stars-icon'>
+                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+              </div>
+            <div class='yellow-box'>
+              <div class='result-two-percentage'>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class='row 2'>
+        <div class='column'>
+          <article class='result-one'>
+            <div class='result-three-amount'>
+            </div>
+              <div class='icons'>
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              </div>
+              <div class='five-stars-icon'>
+                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+              </div>
+            <div class='yellow-box'>
+              <div class='result-three-percentage'>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class='column'> 
+          <article class='result-two'> 
+            <div class='result-four-amount'>
+            </div>
+            <div class='icons'>
+              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+            </div>
+            <div class='five-stars-icon'>
+              <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+            </div>
+            <div class='yellow-box'>
+              <div class='result-four-percentage'>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script>
+  let boxes = document.querySelectorAll('.yellow-box');
+  
+  for (const box of boxes) {
+    let randomBox = Math.floor(Math.random() * 20) - 10;
+    box.style.transform = `rotate(${randomBox}deg)`
+  }
+  
+   const getQuizData = () => {
+    fetch("tagboard_superbowl.json?abc") 
+    .then(response => response.json())
+    .then(data => updateDom(data))
+  }
+  
+  const updateDom = (data) => {
+    let domUpdateQuestion = document.querySelector('.quiz-text')
+    let domUpdateOptionTitleOne = document.querySelector('.result-one-amount')
+    let domUpdateOptionTitleTwo = document.querySelector('.result-two-amount')
+    let domUpdateOptionTitleThree = document.querySelector('.result-three-amount')
+    let domUpdateOptionTitleFour = document.querySelector('.result-four-amount')
+    let domUpdatePercentageOne = document.querySelector('.result-one-percentage')
+    let domUpdatePercentageTwo = document.querySelector('.result-two-percentage')
+    let domUpdatePercentageThree = document.querySelector('.result-three-percentage')
+    let domUpdatePercentageFour = document.querySelector('.result-four-percentage')
+    domUpdateQuestion.innerHTML = `${data.question}?`
+    domUpdateOptionTitleOne.innerHTML = `$${data.results[0].option_title}`
+    domUpdateOptionTitleTwo.innerHTML = `$${data.results[1].option_title}`
+    domUpdateOptionTitleThree.innerHTML = `$${data.results[2].option_title}`
+    domUpdateOptionTitleFour.innerHTML = `$${data.results[3].option_title}`
+    domUpdatePercentageOne.innerHTML = `${data.results[0].from_to[1]}%`
+    domUpdatePercentageTwo.innerHTML = `${data.results[2].from_to[1]}%`
+    domUpdatePercentageThree.innerHTML = `${data.results[1].from_to[1]}%`
+    domUpdatePercentageFour.innerHTML = `${data.results[3].from_to[1]}%`
+    console.log(data)
+  }
+  
+  getQuizData()
+
+  
+</script>
