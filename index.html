@@ -155,8 +155,9 @@
               </div>
               <!-- <div class='red-circle'></div> -->
             <div class='yellow-box'>
-              <div class='result-one-percentage'>
-              </div>
+              <div class='counter' >
+                0
+              </div>%
             </div>
           </article>
         </div>
@@ -173,8 +174,9 @@
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
               </div>
             <div class='yellow-box'>
-              <div class='result-two-percentage'>
-              </div>
+              <div class='counter' >
+                0
+              </div>%
             </div>
           </article>
         </div>
@@ -193,8 +195,9 @@
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
               </div>
             <div class='yellow-box'>
-              <div class='result-three-percentage'>
-              </div>
+              <div class='counter' >
+                0
+              </div>%
             </div>
           </article>
         </div>
@@ -211,8 +214,9 @@
               <img src='images/white-star.png' class='star-icon' alt='white-star' />
             </div>
             <div class='yellow-box'>
-              <div class='result-four-percentage'>
-              </div>
+              <div class='counter' >
+                0
+              </div>%
             </div>
           </article>
         </div>
@@ -223,6 +227,8 @@
 
 <script>
   let boxes = document.querySelectorAll('.yellow-box');
+  let counters = document.querySelectorAll('.counter');
+  let speed = 200;
   
   for (const box of boxes) {
     let randomBox = Math.floor(Math.random() * 20) - 10;
@@ -230,7 +236,7 @@
   }
   
    const getQuizData = () => {
-    fetch("tagboard_superbowl.json?abc") 
+    fetch("tagboard_superbowl.json?ab") 
     .then(response => response.json())
     .then(data => updateDom(data))
   }
@@ -241,23 +247,34 @@
     let domUpdateOptionTitleTwo = document.querySelector('.result-two-amount')
     let domUpdateOptionTitleThree = document.querySelector('.result-three-amount')
     let domUpdateOptionTitleFour = document.querySelector('.result-four-amount')
-    let domUpdatePercentageOne = document.querySelector('.result-one-percentage')
-    let domUpdatePercentageTwo = document.querySelector('.result-two-percentage')
-    let domUpdatePercentageThree = document.querySelector('.result-three-percentage')
-    let domUpdatePercentageFour = document.querySelector('.result-four-percentage')
     domUpdateQuestion.innerHTML = `${data.question}?`
     domUpdateOptionTitleOne.innerHTML = `$${data.results[0].option_title}`
     domUpdateOptionTitleTwo.innerHTML = `$${data.results[1].option_title}`
     domUpdateOptionTitleThree.innerHTML = `$${data.results[2].option_title}`
     domUpdateOptionTitleFour.innerHTML = `$${data.results[3].option_title}`
-    domUpdatePercentageOne.innerHTML = `${data.results[0].from_to[1]}%`
-    domUpdatePercentageTwo.innerHTML = `${data.results[2].from_to[1]}%`
-    domUpdatePercentageThree.innerHTML = `${data.results[1].from_to[1]}%`
-    domUpdatePercentageFour.innerHTML = `${data.results[3].from_to[1]}%`
     console.log(data)
+    for(let i = 0; i < 4; i++) {
+      const counter = counters[i];  
+      counter.innerText = data.results[i].from_to[0];    
+      const animate = () => {
+        const value = +data.results[i].from_to[1]
+        const moreData = +counter.innerText;
+        const time = value / speed;
+        
+        if(moreData < value) {
+          let toSet = Math.ceil(moreData + time);
+          counter.innerText = toSet;
+          setTimeout(animate, 5);
+        } else {
+          counter.innerText = value;
+        }
+      }
+      animate();      
+    }
   }
   
   getQuizData()
+  
 
   
 </script>
