@@ -24,7 +24,7 @@
     .star-icon {
       position: relative;
       top: 0px;
-      left: 0px;
+      left: -250px;
       width: 50px;
       height: 50px;
       background: black;
@@ -116,8 +116,12 @@
       width: 251px;
       position: absolute;
     }
-  
-  
+    
+    .background-star-icon {
+      height: 50px;
+      width: 50px;
+    }
+    
   </style>
   <body>
     <div id='main'>
@@ -146,7 +150,12 @@
             <div class='result-one-amount'>
             </div>
               <div class='icons'>
-                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
@@ -166,7 +175,12 @@
             <div class='result-two-amount'>
             </div>
               <div class='icons'>
-                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
@@ -187,7 +201,12 @@
             <div class='result-three-amount'>
             </div>
               <div class='icons'>
-                <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
                 <img src='images/white-star.png' class='star-icon' alt='white-star' />
@@ -206,7 +225,12 @@
             <div class='result-four-amount'>
             </div>
             <div class='icons'>
-              <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' />
+              <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
               <img src='images/white-star.png' class='star-icon' alt='white-star' />
               <img src='images/white-star.png' class='star-icon' alt='white-star' />
               <img src='images/white-star.png' class='star-icon' alt='white-star' />
@@ -236,7 +260,7 @@
   }
   
    const getQuizData = () => {
-    fetch("tagboard_superbowl.json?ab") 
+    fetch("tagboard_superbowl.json?abim") 
     .then(response => response.json())
     .then(data => updateDom(data))
   }
