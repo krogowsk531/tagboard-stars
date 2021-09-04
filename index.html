@@ -5,6 +5,8 @@
       position: relative;
     }
     
+  
+    
     #main {
       color: white;
       background: black;
@@ -15,6 +17,10 @@
       font-family: sans-serif;
     }
     
+    #title-text {
+      flex-grow: 8.5;
+    }
+    
     header {
       text-align: center;
       padding-top: 60px;
@@ -22,12 +28,12 @@
     }
     
     .star-icon {
-      position: relative;
-      top: 0px;
-      left: -250px;
+      background-image: url(images/white-star.png);
       width: 50px;
       height: 50px;
-      background: black;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left;
     }
     
     .star-icon-left {
@@ -96,7 +102,6 @@
     
     .header-text {
       margin: 15px;
-      background-color: red;
     }
     
     .quiz-text {
@@ -111,7 +116,7 @@
       border-radius: 50%;
     }
     
-    .five-star-icon {
+    .five-grey-stars {
       height: 50px;
       width: 251px;
       position: absolute;
@@ -132,7 +137,7 @@
             <img src='images/white-star.png' class='star-icon' alt='white-star' />
           </div>
         </div>
-        <div class='column'>
+        <div id='title-text' class='column'>
           <div class='quiz-text'>
           </div>
         </div>
@@ -150,17 +155,19 @@
             <div class='result-one-amount'>
             </div>
               <div class='icons'>
-                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/5grey-stars.png' class='five-grey-stars' alt='five-stars' />
+                <!-- <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' /> -->
+                <div class='five-white-stars'>
+                  <div class='star-icon' alt='white-star'></div>
+                  <div class='star-icon' alt='white-star'></div>
+                  <div class='star-icon' alt='white-star'></div>
+                  <div class='star-icon' alt='white-star'></div>
+                  <div class='star-icon' alt='white-star'></div>
+                </div>
               </div>
               <!-- <div class='red-circle'></div> -->
             <div class='yellow-box'>
@@ -175,17 +182,19 @@
             <div class='result-two-amount'>
             </div>
               <div class='icons'>
-                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/5grey-stars.png' class='five-grey-stars' alt='five-stars' />
+                <!-- <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' /> -->
+                <div class='five-white-stars'>
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                </div>
               </div>
             <div class='yellow-box'>
               <div class='counter' >
@@ -201,17 +210,19 @@
             <div class='result-three-amount'>
             </div>
               <div class='icons'>
-                <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+                <img src='images/5grey-stars.png' class='five-grey-stars' alt='five-stars' />
+                <!-- <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
                 <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
-                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/background-star.png' class='background-star-icon' alt='grey-star' /> -->
+                <div class='five-white-stars'>
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                  <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                </div>
               </div>
             <div class='yellow-box'>
               <div class='counter' >
@@ -225,17 +236,20 @@
             <div class='result-four-amount'>
             </div>
             <div class='icons'>
-              <!-- <img src='images/5grey-stars.png' class='five-star-icon' alt='five-stars' /> -->
+              <img src='images/5grey-stars.png' class='five-grey-stars' alt='five-stars' />
+              <!-- <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
               <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
               <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
               <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' />
-              <img src='images/white-star.png' class='star-icon' alt='white-star' />
-              <img src='images/white-star.png' class='star-icon' alt='white-star' />
-              <img src='images/white-star.png' class='star-icon' alt='white-star' />
-              <img src='images/white-star.png' class='star-icon' alt='white-star' />
-              <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              <img src='images/background-star.png' class='background-star-icon' alt='grey-star' /> -->
+              <div class='five-white-stars'>
+
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+                <img src='images/white-star.png' class='star-icon' alt='white-star' />
+              </div>
             </div>
             <div class='yellow-box'>
               <div class='counter' >
@@ -253,6 +267,13 @@
   let boxes = document.querySelectorAll('.yellow-box');
   let counters = document.querySelectorAll('.counter');
   let speed = 200;
+  let starTotal = 5;
+  let ratings = {
+    areaOne: .65,
+    areaTwo: 1.95,
+    areaThree: 1.25,
+    areaFour: 1.25
+  }
   
   for (const box of boxes) {
     let randomBox = Math.floor(Math.random() * 20) - 10;
@@ -298,6 +319,12 @@
   }
   
   getQuizData()
+  
+  for(let rating in ratings) {
+    let starPercentage = (ratings[rating] / starTotal) * 100;
+    let starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`
+    document.querySelector(`.${rating} .background-star-icon`).style.width = starPercentageRounded;
+  }
   
 
   
